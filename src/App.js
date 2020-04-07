@@ -3,6 +3,7 @@ import List from './components/List.js';
 import Stage from './components/Stage';
 import Chat from './components/Chat';
 import './App.css'
+import './Stage.css'
 
 class App extends React.Component {
   static defaultProps = {
@@ -48,6 +49,15 @@ class App extends React.Component {
               timestamp={chatEvents.timestamp}
             />
           )}
+        </div>
+        <div className='app-stage'>
+            {store.participants.filter(participant => participant.onStage).map(participant => 
+              <Stage
+                key={participant.id}
+                avatar={participant.avatar}
+                name={participant.name}
+              />
+            )}
         </div>
       </main>
     );
