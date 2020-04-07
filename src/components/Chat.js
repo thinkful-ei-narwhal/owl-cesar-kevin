@@ -6,6 +6,7 @@ function message(props) {
     <img className='userAvatar' src={props.avatar} alt={props.name}/>
     <h3 className='userName'>{props.name}</h3>
     <span className='time'>{props.time}</span>
+    <p>{props.message}</p>
     </div>
     )
 }
