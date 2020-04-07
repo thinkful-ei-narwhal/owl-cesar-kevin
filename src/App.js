@@ -2,6 +2,7 @@ import React from 'react';
 import List from './components/List.js';
 import Stage from './components/Stage';
 import './App.css'
+import './Stage.css'
 
 class App extends React.Component {
   static defaultProps = {
@@ -35,6 +36,15 @@ class App extends React.Component {
               onStage={participant.onStage}
             />
           )}
+        </div>
+        <div className='app-stage'>
+            {store.participants.filter(participant => participant.onStage).map(participant => 
+              <Stage
+                key={participant.id}
+                avatar={participant.avatar}
+                name={participant.name}
+              />
+            )}
         </div>
       </main>
     );
