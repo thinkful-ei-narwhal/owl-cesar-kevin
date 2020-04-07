@@ -16,9 +16,13 @@ function List(props) {
     return (
         <section className='List'>
             <img className='userAvatar' src={props.avatar} alt={props.name}/>
+            <div className='userContainer'>
             <h3 className='userName'>{props.name}</h3>
+
             <span className={color}></span>
             <span className='stageStatus'>{userStatus}</span>
+
+            </div>
         </section>
 
     );
