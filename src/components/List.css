@@ -1,8 +1,19 @@
+
+.List{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+
+
 .dot {
-    height: 25px;
-    width: 25px;
+    height: 15px;
+    width: 15px;
     border-radius: 50%;
     display: inline-block;
+    margin-right: 5px;
+    vertical-align: bottom;
   }
 
   .grey{
@@ -12,3 +23,19 @@
   .green{
     background-color: rgb(19, 182, 46);
   }
+
+  img{
+    height: 40px;
+    width:40px;
+    border: black solid 1px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+h3{
+   font-size: 15px;
+   margin: 5px;
+}
+span{
+    font-size: 15px;
+}
