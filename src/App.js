@@ -1,11 +1,21 @@
 import React from 'react';
 
-function App() {
-  return (
-    <main className='App'>
-      {/* content goes here */}
-    </main>
-  );
+class App extends React.Component {
+  // static defaultProps = {
+  //   store: {
+  //     lists: [],
+  //     allCards: {}
+  //   }
+  // };
+
+  render() {
+    const { store } = this.props
+    return (
+      <main className='App'>
+        
+      </main>
+    );
+  }
 }
 
 export default App;
