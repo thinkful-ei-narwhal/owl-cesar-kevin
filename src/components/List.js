@@ -10,7 +10,7 @@ function List(props) {
         color="dot green";
     }else{
         userStatus= ((props.inSession)?"in session" : "left session");
-        color="dot grey";
+        color=((props.inSession)?"dot green" : "dot grey");
     }
 
     return (
