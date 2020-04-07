@@ -1,12 +1,13 @@
 import React from 'react';
+import Stage from './components/Stage';
 
 class App extends React.Component {
-  // static defaultProps = {
-  //   store: {
-  //     lists: [],
-  //     allCards: {}
-  //   }
-  // };
+  static defaultProps = {
+    store: {
+      participants: [],
+      chatEvents: {}
+    }
+  };
 
   render() {
     const { store } = this.props
